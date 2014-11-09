@@ -1,0 +1,78 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0099cc"
+    tools:context=".MainMenuActivity" >
+
+    <!--
+         The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc.
+    -->
+
+    <TextView
+        android:id="@+id/fullscreen_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:keepScreenOn="true"
+        android:text="@string/dummy_content"
+        android:textColor="#33b5e5"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+
+    <!--
+         This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows.
+    -->
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background"
+        android:fitsSystemWindows="true" >
+
+        <LinearLayout
+            android:id="@+id/fullscreen_content_controls"
+            style="?buttonBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:background="@color/black_overlay"
+            android:orientation="vertical"
+            tools:ignore="UselessParent" >
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/recognize_network"
+            android:layout_width="fill_parent"
+            style="@style/ButtonStyle"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:text="@string/recognize_network"
+            android:onClick="startRecognizeNetworkActivity" />
+        
+        <Button
+            android:id="@+id/controler"
+            style="@style/ButtonStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="170dp"
+            android:onClick="startControlerActivity"
+            android:clickable="true"
+            android:soundEffectsEnabled="true"
+            android:text="@string/controler" />
+        
+        <Button
+            android:id="@+id/screen_controler"
+            style="@style/ButtonStyle"
+            android:onClick="startScreenControlerActivity"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="240dp"
+            android:text="@string/screen_controler" />
+
+    </FrameLayout>
+
+</FrameLayout>

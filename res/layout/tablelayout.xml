@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tableLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true" >
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dip" >
+        <TextView
+            android:id="@+id/xText1"
+            android:text="@string/coor_data"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+        <TextView
+            android:id="@+id/yText1"
+            android:text="@string/coor_data"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+        <TextView
+            android:id="@+id/zText1"
+            android:text="@string/coor_data"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+    </TableRow>
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dip" >
+        <TextView
+            android:id="@+id/xText2"
+            android:text="@string/coor_data"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+        <TextView
+            android:id="@+id/yText2"
+            android:text="@string/coor_data"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+        <TextView
+            android:id="@+id/zText2"
+            android:text="@string/coor_data"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+    </TableRow>
+    <TableRow
+        android:id="@+id/tableRow3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dip" >
+        <TextView
+            android:id="@+id/xText3"
+            android:text="@string/coor_data"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+        <TextView
+            android:id="@+id/yText3"
+            android:text="@string/coor_data"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+        <TextView
+            android:id="@+id/zText3"
+            android:text="@string/coor_data"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+    </TableRow> 
+</TableLayout>

@@ -1,0 +1,100 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background" >
+
+    <TextView
+        style="@style/text_style"
+        android:id="@+id/pantxt"
+        android:text="@string/pan"
+        android:textColor="@color/textColor"
+        android:layout_marginTop="15dp"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <SeekBar
+        android:id="@+id/pan"
+        style="@style/bar_style"
+        android:layout_below="@+id/pantxt" />
+
+    <TextView
+        android:id="@+id/tilttxt"
+        style="@style/text_style"
+        android:layout_alignLeft="@+id/pantxt"
+        android:layout_below="@+id/pan"
+        android:text="@string/tilt"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/textColor" />
+
+    <SeekBar
+        android:id="@+id/tilt"
+       	style="@style/bar_style"
+        android:layout_below="@+id/tilttxt" />
+
+    <TextView
+        android:id="@+id/redtxt"
+        style="@style/text_style"
+        android:layout_alignLeft="@+id/tilttxt"
+        android:layout_below="@+id/tilt"
+        android:text="@string/red"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/RED" />
+    
+    <SeekBar
+        android:id="@+id/red"
+       	style="@style/bar_style"
+        android:layout_below="@+id/redtxt" />
+    
+    <TextView
+        android:id="@+id/greentxt"
+        style="@style/text_style"
+        android:layout_alignLeft="@+id/redtxt"
+        android:layout_below="@+id/red"
+        android:text="@string/green"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/GREEN" />
+    
+    <SeekBar
+        android:id="@+id/green"
+       	style="@style/bar_style"
+        android:layout_below="@+id/greentxt" />
+    
+    <TextView
+        android:id="@+id/bluetxt"
+        style="@style/text_style"
+        android:layout_alignLeft="@+id/greentxt"
+        android:layout_below="@+id/green"
+        android:text="@string/blue"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/BLUE" />
+    
+    <SeekBar
+        android:id="@+id/blue"
+       	style="@style/bar_style"
+        android:layout_below="@+id/bluetxt" />
+    
+    <TextView
+        android:id="@+id/dimmertxt"
+        style="@style/text_style"
+        android:layout_alignLeft="@+id/bluetxt"
+        android:layout_below="@+id/blue"
+        android:text="@string/dimmer"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/textColor" />
+    
+    <SeekBar
+        android:id="@+id/dimmer"
+       	style="@style/bar_style"
+        android:layout_below="@+id/dimmertxt" />
+
+    <Switch
+        android:id="@+id/unicastPacket"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:layout_centerHorizontal="true"
+        android:textOn="Broadcast DMX"
+        android:textOff="Unicast DMX" />
+
+</RelativeLayout>
